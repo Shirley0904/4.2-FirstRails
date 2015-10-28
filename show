@@ -1,0 +1,15 @@
+class WelcomeController < ApplicationController
+
+    def show
+      if params[:name].upcase == "Billy"
+        text = "Isn't your real name William?"
+      elsif params [:name].upcase == "George"
+      elsif params [:name].upcase == "John"
+        text = "Didn't those two used to be president?"
+      else
+        text = "Yes."
+      end
+      render :text => text
+    end
+
+  end
