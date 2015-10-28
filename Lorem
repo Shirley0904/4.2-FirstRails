@@ -1,0 +1,6 @@
+class WelcomeController < ApplicationController
+
+  def index
+    render :text => "Lorem ipsum dolor sit amet."
+  end
+  end
